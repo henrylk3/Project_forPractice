@@ -1,0 +1,83 @@
+<view class="message-bubble {{message.role === 'user' ? 'message-right' : 'message-left'}} fade-in" wx:if="{{message}}">
+  <view class="avatar" wx:if="{{message.role === 'assistant'}}">
+    <image class="avatar-img" src="/assets/icons/bot-avatar.png" mode="aspectFill"></image>
+  </view>
+
+  <view class="avatar" wx:if="{{message.role === 'user'}}">
+    <image class="avatar-img" src="{{displayUserAvatar || '/assets/icons/user-avatar.png'}}" mode="aspectFill" binderror="onAvatarError"></image>
+  </view>
+
+  <view class="bubble-wrap">
+    <view class="bubble {{message.role === 'user' ? 'bubble-user' : 'bubble-bot'}}" bindlongpress="onLongPressBubble">
+      <view class="bubble-content" wx:if="{{message.contentType === 'image'}}">
+        <image
+          class="content-image"
+          src="{{message.localImagePath || message.mediaUrl}}"
+          mode="widthFix"
+          bindtap="previewImage"
+          data-url="{{message.localImagePath || message.mediaUrl}}"
+        ></image>
+      </view>
+
+      <view class="bubble-content" wx:elif="{{message.contentType === 'voice'}}">
+        <view class="voice-bubble {{message.role === 'user' ? 'voice-user' : 'voice-other'}}" bindtap="playVoice" style="width: {{100 + (message.duration || 1) * 10}}rpx;">
+          <text class="voice-duration">{{message.duration || 0}}"</text>
+          <view class="voice-icon {{isPlayingVoice ? 'voice-anim' : ''}} {{message.role === 'user' ? 'voice-icon-user' : 'voice-icon-other'}}">
+            <view class="vbar vbar1"></view>
+            <view class="vbar vbar2"></view>
+            <view class="vbar vbar3"></view>
+          </view>
+        </view>
+      </view>
+
+      <view class="bubble-content" wx:elif="{{message.contentType === 'emoji'}}">
+        <text class="content-emoji">{{message.content}}</text>
+      </view>
+
+      <view class="bubble-content" wx:elif="{{message.role === 'user'}}">
+        <text class="content-text" selectable user-select>{{message.content}}</text>
+      </view>
+
+      <view class="bubble-content md-content" wx:else>
+        <block wx:for="{{mdNodes}}" wx:key="index">
+          <text wx:if="{{item.type === 'h1'}}" class="md-h1">{{item.content}}</text>
+          <text wx:elif="{{item.type === 'h2'}}" class="md-h2">{{item.content}}</text>
+          <text wx:elif="{{item.type === 'h3'}}" class="md-h3">{{item.content}}</text>
+          <text wx:elif="{{item.type === 'p'}}" class="md-p">{{item.content}}</text>
+          <view wx:elif="{{item.type === 'ul'}}" class="md-list">
+            <view wx:for="{{item.items}}" wx:for-item="li" wx:key="index" class="md-li">
+              <text class="md-bullet">•</text>
+              <text class="md-li-text">{{li}}</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.type === 'ol'}}" class="md-list">
+            <view wx:for="{{item.items}}" wx:for-item="li" wx:for-index="idx" wx:key="index" class="md-li">
+              <text class="md-num">{{idx + 1}}.</text>
+              <text class="md-li-text">{{li}}</text>
+            </view>
+          </view>
+          <view wx:elif="{{item.type === 'code'}}" class="md-code-block">
+            <view class="md-code-header">
+              <text class="md-code-lang">{{item.lang || '代码'}}</text>
+              <text class="md-copy-btn" bindtap="copyCode" data-code="{{item.content}}">复制</text>
+            </view>
+            <text class="md-code-text">{{item.content}}</text>
+          </view>
+          <text wx:elif="{{item.type === 'quote'}}" class="md-quote">{{item.content}}</text>
+          <view wx:elif="{{item.type === 'hr'}}" class="md-hr"></view>
+        </block>
+        <text wx:if="{{mdNodes.length === 0 && message.content}}" class="content-text">{{message.content}}</text>
+      </view>
+    </view>
+
+    <view class="message-meta {{message.role === 'user' ? 'meta-right' : 'meta-left'}}">
+      <text class="message-time">{{message.timeText}}</text>
+      <view class="message-status" wx:if="{{message.role === 'user'}}">
+        <text class="status-text" wx:if="{{message.status === 'sending'}}">发送中</text>
+        <text class="status-text" wx:elif="{{message.status === 'sent'}}">已发送</text>
+        <text class="status-text status-read" wx:elif="{{message.status === 'read'}}">已读</text>
+        <text class="status-text status-fail" wx:elif="{{message.status === 'failed'}}">发送失败</text>
+      </view>
+    </view>
+  </view>
+</view>

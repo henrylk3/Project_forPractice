@@ -1,0 +1,93 @@
+<view class="settings-container">
+  <view class="user-section card" bindtap="goProfileEdit">
+    <view class="user-info">
+      <view class="avatar-wrap">
+        <image class="user-avatar" src="{{displayAvatarUrl || '/assets/icons/user-avatar.png'}}" mode="aspectFill" binderror="onAvatarError"></image>
+        <view class="avatar-edit-badge">
+          <text class="edit-badge-icon">📷</text>
+        </view>
+      </view>
+      <view class="user-detail">
+        <text class="user-name">{{userInfo.nickname || '未登录'}}</text>
+        <text class="user-id" wx:if="{{userInfo.id}}">点击编辑资料</text>
+        <text class="user-id" wx:else>点击登录</text>
+      </view>
+    </view>
+    <text class="arrow">›</text>
+  </view>
+
+  <view class="card">
+    <view class="setting-item" bindtap="goStats">
+      <view class="setting-left">
+        <text class="setting-icon">📊</text>
+        <text class="setting-label">数据统计</text>
+      </view>
+      <text class="arrow">›</text>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="setting-item" bindtap="goHelp">
+      <view class="setting-left">
+        <text class="setting-icon">❓</text>
+        <text class="setting-label">帮助中心</text>
+      </view>
+      <text class="arrow">›</text>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="setting-item" bindtap="goSearch">
+      <view class="setting-left">
+        <text class="setting-icon">🔍</text>
+        <text class="setting-label">搜索对话</text>
+      </view>
+      <text class="arrow">›</text>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="setting-item" bindtap="clearCache">
+      <view class="setting-left">
+        <text class="setting-icon">🗑️</text>
+        <text class="setting-label">清除缓存</text>
+      </view>
+      <text class="setting-value">{{cacheSize}}</text>
+    </view>
+  </view>
+
+  <view class="logout-section" wx:if="{{isLogged}}">
+    <button class="btn-logout" bindtap="onLogout">退出登录</button>
+  </view>
+</view>
+
+<view class="picker-mask" wx:if="{{showProfileEdit}}" bindtap="hideProfileEdit"></view>
+<view class="picker-panel {{showProfileEdit ? 'picker-show' : ''}}">
+  <view class="picker-header">
+    <text class="picker-cancel" bindtap="hideProfileEdit">取消</text>
+    <text class="picker-title">编辑资料</text>
+    <text class="picker-confirm" bindtap="saveProfile">保存</text>
+  </view>
+  <view class="profile-edit-content">
+    <view class="profile-avatar-section" bindtap="chooseAvatar">
+      <text class="profile-label">头像</text>
+      <view class="profile-avatar-right">
+        <image class="profile-avatar-preview" src="{{editAvatarUrl || '/assets/icons/user-avatar.png'}}" mode="aspectFill"></image>
+        <text class="arrow">›</text>
+      </view>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="profile-nickname-section">
+      <text class="profile-label">昵称</text>
+      <input
+        class="profile-nickname-input"
+        placeholder="请输入昵称"
+        value="{{editNickname}}"
+        bindinput="onNicknameInput"
+        maxlength="20"
+      />
+    </view>
+  </view>
+</view>

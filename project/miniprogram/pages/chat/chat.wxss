@@ -1,0 +1,99 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.message-list {
+  flex: 1;
+  height: 0;
+  padding-bottom: 16rpx;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rpx 48rpx 60rpx;
+}
+
+.welcome-icon {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin-bottom: 32rpx;
+  background-color: #E8F0FE;
+}
+
+.welcome-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+
+.welcome-desc {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.voice-player-wrap {
+  padding: 0 24rpx 8rpx;
+  max-width: 70%;
+  margin-left: 108rpx;
+}
+
+.input-area {
+  background-color: #FFFFFF;
+  border-top: 1rpx solid #EEEEEE;
+}
+
+.new-chat-wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8rpx 24rpx;
+  background-color: #F5F5F5;
+}
+
+.new-chat-btn {
+  display: flex;
+  align-items: center;
+  padding: 8rpx 20rpx;
+  border-radius: 28rpx;
+  background-color: #4A90D9;
+}
+
+.new-chat-btn-icon {
+  font-size: 22rpx;
+  color: #FFFFFF;
+  margin-right: 4rpx;
+  line-height: 1;
+}
+
+.new-chat-btn-text {
+  font-size: 22rpx;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.scroll-bottom-btn {
+  position: fixed;
+  right: 32rpx;
+  bottom: 280rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.scroll-bottom-icon {
+  font-size: 28rpx;
+  color: #4A90D9;
+  line-height: 1;
+}

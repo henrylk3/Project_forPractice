@@ -1,0 +1,33 @@
+<view class="voice-recorder">
+  <view
+    class="record-btn {{isRecording ? 'record-btn-active' : ''}}"
+    bindtouchstart="onTouchStart"
+    bindtouchend="onTouchEnd"
+    bindtouchcancel="onTouchCancel"
+  >
+    <view class="record-btn-inner" wx:if="{{!isRecording}}">
+      <text class="record-icon">🎤</text>
+      <text class="record-text">按住说话</text>
+    </view>
+    <view class="record-btn-inner" wx:else>
+      <view class="wave-animation">
+        <view class="wave-bar wave-bar-1"></view>
+        <view class="wave-bar wave-bar-2"></view>
+        <view class="wave-bar wave-bar-3"></view>
+        <view class="wave-bar wave-bar-4"></view>
+        <view class="wave-bar wave-bar-5"></view>
+      </view>
+      <text class="record-text-active">松开发送</text>
+      <text class="record-time">{{recordTimeText}}</text>
+    </view>
+  </view>
+
+  <view class="record-overlay" wx:if="{{isRecording}}">
+    <view class="overlay-content">
+      <view class="overlay-waves">
+        <view class="overlay-wave-bar {{i <= volumeLevel ? 'overlay-wave-active' : ''}}" wx:for="{{8}}" wx:key="*this" wx:for-index="i" wx:for-item="_"></view>
+      </view>
+      <text class="overlay-text">{{recordStatusText}}</text>
+    </view>
+  </view>
+</view>

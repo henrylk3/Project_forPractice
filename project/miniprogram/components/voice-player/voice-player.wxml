@@ -1,0 +1,16 @@
+<view class="voice-player">
+  <view class="player-controls">
+    <view class="play-btn {{isPlaying ? 'play-btn-active' : ''}}" bindtap="togglePlay">
+      <text class="play-icon">{{isPlaying ? '⏸' : '▶️'}}</text>
+    </view>
+    <view class="player-progress" bindtap="onProgressTap">
+      <view class="progress-bar">
+        <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+      </view>
+      <text class="progress-time">{{currentTimeText}} / {{durationText}}</text>
+    </view>
+    <view class="stop-btn" bindtap="stopPlay" wx:if="{{isPlaying || hasPlayed}}">
+      <text class="stop-icon">⏹</text>
+    </view>
+  </view>
+</view>

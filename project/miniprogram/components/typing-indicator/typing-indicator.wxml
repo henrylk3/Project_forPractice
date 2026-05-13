@@ -1,0 +1,10 @@
+<view class="typing-indicator fade-in" wx:if="{{visible}}">
+  <view class="avatar">
+    <image class="avatar-img" src="/assets/icons/bot-avatar.png" mode="aspectFill"></image>
+  </view>
+  <view class="typing-dots">
+    <view class="dot dot1"></view>
+    <view class="dot dot2"></view>
+    <view class="dot dot3"></view>
+  </view>
+</view>

@@ -1,0 +1,718 @@
+2026-05-01 17:31:15.958 | INFO     | app.main:lifespan:24 - Starting ChatBot API Server...
+2026-05-01 17:33:36.462 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 17:34:44.180 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 17:36:39.271 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 17:38:11.387 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 17:38:11.425 | INFO     | app.main:lifespan:30 - Database initialized
+2026-05-01 17:40:11.263 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f474fa-758ab7c9-6730afab'}
+2026-05-01 18:03:15.080 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f47a62-5317aeba-5b843f96'}
+2026-05-01 18:03:26.110 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f47a6d-19a87871-68b87ce4'}
+2026-05-01 18:03:41.468 | INFO     | app.services.auth_service:get_or_create_user:86 - New user created: 3459b4a1-9bea-4ea4-9cfa-91c5e2db02fa
+2026-05-01 18:03:44.289 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-01 18:03:44.292 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-01 18:03:44.292 | INFO     | app.nlp.dialogue_manager:__init__:34 - DialogueManager initialized
+2026-05-01 18:03:44.293 | INFO     | app.nlp.dialogue_manager:process_message:49 - Intent: general (confidence: 0.3), Entities: 0
+2026-05-01 18:03:53.153 | INFO     | app.nlp.transformer_model:_load_model:44 - Loading model Qwen/Qwen-1_8B-Chat on cpu...
+2026-05-01 18:09:12.075 | ERROR    | app.nlp.transformer_model:_load_model:73 - Failed to load model: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2026-05-01 18:09:13.359 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f47bc9-294a8597-5f4fee8c'}
+2026-05-01 18:09:13.361 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f47bc9-2555e1a9-366c0ff5'}
+2026-05-01 18:09:13.362 | ERROR    | app.services.auth_service:get_wx_openid:65 - WeChat auth failed: {'errcode': 41002, 'errmsg': 'appid missing, rid: 69f47bc9-03ddeb19-22502772'}
+2026-05-01 18:13:10.764 | INFO     | app.main:lifespan:34 - Shutting down ChatBot API Server...
+2026-05-01 18:13:12.629 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 18:13:12.632 | INFO     | app.main:lifespan:30 - Database initialized
+2026-05-01 18:49:37.852 | INFO     | app.main:lifespan:27 - Starting ChatBot API Server...
+2026-05-01 18:49:37.856 | INFO     | app.main:lifespan:30 - Database initialized
+2026-05-01 18:50:01.441 | INFO     | app.services.auth_service:get_or_create_user:111 - New user created: 7a2d451c-c592-46ad-a130-57d6a3383c95
+2026-05-01 18:53:00.016 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-01 18:53:00.018 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-01 18:53:00.018 | INFO     | app.nlp.dialogue_manager:__init__:34 - DialogueManager initialized
+2026-05-01 18:53:00.035 | INFO     | app.nlp.dialogue_manager:process_message:49 - Intent: greeting (confidence: 1.0), Entities: 0
+2026-05-01 18:53:06.762 | INFO     | app.nlp.dialogue_manager:process_message:49 - Intent: general (confidence: 0.3), Entities: 0
+2026-05-01 18:53:14.691 | INFO     | app.nlp.transformer_model:_load_model:44 - Loading model Qwen/Qwen-1_8B-Chat on cpu...
+2026-05-01 23:08:11.490 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-01 23:08:11.495 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-01 23:08:17.752 | INFO     | app.nlp.transformer_model:_load_model:48 - Loading model Qwen/Qwen-1_8B-Chat on cpu...
+2026-05-01 23:08:35.023 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-01 23:08:35.026 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-01 23:08:35.026 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-01 23:08:35.036 | INFO     | app.nlp.dialogue_manager:process_message:59 - Intent: greeting (confidence: 1.0), Entities: 0
+2026-05-01 23:09:05.708 | INFO     | app.nlp.dialogue_manager:process_message:59 - Intent: general (confidence: 0.3), Entities: 0
+2026-05-01 23:13:09.357 | INFO     | app.main:lifespan:49 - Shutting down ChatBot API Server...
+2026-05-01 23:13:11.432 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-01 23:13:11.436 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-01 23:13:17.321 | INFO     | app.nlp.transformer_model:_load_model:48 - Loading model Qwen/Qwen-1_8B-Chat on cpu...
+2026-05-01 23:18:36.211 | ERROR    | app.nlp.transformer_model:_load_model:91 - Failed to load model: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2026-05-01 23:18:36.212 | INFO     | app.main:preload_model:40 - Model preloaded successfully
+2026-05-01 23:23:10.593 | INFO     | app.main:lifespan:49 - Shutting down ChatBot API Server...
+2026-05-01 23:23:12.646 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-01 23:23:12.651 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-01 23:23:12.836 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.openai.com/v1, model=gpt-3.5-turbo
+2026-05-01 23:23:12.837 | WARNING  | app.main:lifespan:38 - LLM API key not configured. Set LLM_API_KEY environment variable to enable API mode.
+2026-05-01 23:24:21.487 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-01 23:52:58.463 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-01 23:52:58.468 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-01 23:52:58.663 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-v4-flash
+2026-05-01 23:52:58.663 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-v4-flash
+2026-05-01 23:54:21.776 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-01 23:54:21.779 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-01 23:54:21.779 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-01 23:57:59.998 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-01 23:58:00.041 | ERROR    | app.api.voice:recognize_speech:97 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-01 23:58:00.154 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-01 23:58:02.020 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-01 23:58:02.024 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-01 23:58:02.215 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-v4-flash
+2026-05-01 23:58:02.215 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-v4-flash
+2026-05-01 23:58:32.112 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:04:39.546 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:04:39.551 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:04:39.763 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:04:39.764 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:05:10.829 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:05:10.832 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:05:10.832 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:09:37.761 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:09:38.938 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:09:38.942 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:09:39.113 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:09:39.114 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:11:06.088 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:11:42.284 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:11:42.288 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:11:42.487 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:11:42.487 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:12:33.686 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:12:33.689 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:12:33.689 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:13:16.023 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:20:33.335 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:20:33.338 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:20:33.531 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:20:33.531 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:20:44.566 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:20:44.569 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:20:44.569 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:22:27.694 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:23:14.963 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:23:14.967 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:23:15.195 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:23:15.195 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:23:32.199 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:23:32.202 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:23:32.202 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:25:37.341 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:26:27.128 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:26:27.132 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:26:27.336 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:26:27.337 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:26:39.243 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:26:39.245 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:26:39.245 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:31:25.283 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:31:26.643 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:31:26.654 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:31:26.847 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:31:26.847 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:31:57.649 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 00:47:53.024 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 00:47:53.029 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 00:47:53.231 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:47:53.231 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 00:49:14.289 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 00:49:14.292 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 00:49:14.293 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 00:52:36.963 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-02 00:52:37.001 | ERROR    | app.api.voice:recognize_speech:97 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-02 00:56:37.973 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 01:12:59.495 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 01:12:59.500 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 01:12:59.705 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:12:59.705 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:13:43.532 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 01:13:43.534 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 01:13:43.535 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 01:13:59.753 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-02 01:13:59.791 | ERROR    | app.api.voice:recognize_speech:97 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-02 01:14:14.806 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 01:19:09.148 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 01:19:09.153 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 01:19:09.351 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:19:09.352 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:19:20.205 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 01:19:20.208 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 01:19:20.208 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 01:19:34.470 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-02 01:19:34.508 | ERROR    | app.api.voice:recognize_speech:97 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-02 01:20:08.736 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 01:27:11.482 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 01:27:11.486 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 01:27:11.686 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:27:11.687 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:28:11.658 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-02 01:28:11.698 | ERROR    | app.api.voice:recognize_speech:101 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-02 01:28:27.797 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 01:28:27.799 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 01:28:27.799 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 01:31:51.667 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 01:34:31.379 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 01:34:31.383 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 01:34:31.588 | INFO     | app.nlp.llm_client:__init__:40 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:34:31.588 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 01:35:25.239 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 01:35:25.242 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 01:35:25.242 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 01:36:14.334 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 16:25:59.738 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 16:25:59.742 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 16:25:59.948 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 16:25:59.948 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 16:26:29.762 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 16:26:29.765 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 16:26:29.765 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 16:28:05.320 | ERROR    | app.nlp.llm_client:chat_with_image:167 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[4]: unknown variant `image_url`, expected `text` at line 1 column 122870","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-02 16:28:05.321 | ERROR    | app.services.chat_service:_generate_image_response:265 - Image recognition error: Client error '400 Bad Request' for url 'https://api.deepseek.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-02 16:28:18.422 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 16:44:36.224 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 16:44:36.228 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 16:44:36.420 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 16:44:36.420 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 16:46:09.681 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 16:46:09.684 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 16:46:09.684 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 16:47:47.998 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-02 16:47:48.036 | ERROR    | app.api.voice:recognize_speech:101 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-02 16:49:34.731 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 16:52:39.566 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 16:52:39.570 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 16:52:39.767 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 16:52:39.767 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 16:57:16.975 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:01:06.872 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:01:06.876 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:01:07.076 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:01:07.076 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 17:01:54.510 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 17:01:54.513 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 17:01:54.513 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 17:03:24.132 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:06:44.734 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:06:44.737 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:06:44.931 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:06:44.931 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 17:07:42.613 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 17:07:42.616 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 17:07:42.616 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 17:08:07.815 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:10:52.446 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:10:52.450 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:10:52.646 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:10:52.647 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 17:19:59.822 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:20:03.449 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:20:03.452 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:20:03.649 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:20:03.649 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 17:20:27.851 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-02 17:20:27.853 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-02 17:20:27.854 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-02 17:46:43.503 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:46:47.151 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:46:47.156 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:46:47.357 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:46:47.357 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 17:47:01.091 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 17:47:02.456 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 17:47:02.459 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 17:47:02.651 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 17:47:02.651 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 18:00:21.215 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 20:03:41.775 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 20:03:41.780 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 20:03:42.027 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 20:03:42.028 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 20:04:18.513 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-02 20:09:01.613 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-02 20:09:01.620 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-02 20:09:01.860 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-02 20:09:01.860 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-02 20:16:50.697 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 18:57:14.932 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 18:57:14.936 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 18:57:15.145 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 18:57:15.145 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 18:57:41.976 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-03 18:57:41.979 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-03 18:57:41.979 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-03 18:58:14.210 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 19:05:44.810 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 19:05:44.815 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 19:05:45.004 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 19:05:45.004 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 19:07:10.363 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 19:12:24.997 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 19:12:25.001 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 19:12:25.200 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 19:12:25.200 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 19:28:22.079 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 20:43:51.627 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 20:43:51.632 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 20:43:51.829 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 20:43:51.829 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 20:44:20.735 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-03 20:44:20.737 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-03 20:44:20.738 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-03 20:45:28.686 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-03 20:45:28.726 | ERROR    | app.api.voice:recognize_speech:101 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 20:47:26.148 | ERROR    | app.api.voice:recognize_speech:101 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 20:48:49.667 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 21:02:25.314 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 21:02:25.319 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 21:02:25.519 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 21:02:25.519 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 21:02:57.567 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-03 21:02:57.628 | ERROR    | app.api.voice:recognize_speech:117 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 21:03:09.166 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 21:45:27.716 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 21:45:27.720 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 21:45:27.933 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 21:45:27.934 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 21:46:51.783 | ERROR    | app.services.auth_service:get_wx_openid:87 - WeChat auth failed: {'errcode': 40029, 'errmsg': 'invalid code, rid: 69f751cd-6c773568-75461a53'}
+2026-05-03 21:49:47.744 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 21:49:58.930 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 21:49:58.934 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 21:49:59.134 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.openai.com/v1, model=gpt-3.5-turbo, vision_model=deepseek-chat
+2026-05-03 21:49:59.134 | WARNING  | app.main:lifespan:38 - LLM API key not configured. Set LLM_API_KEY environment variable to enable API mode.
+2026-05-03 21:50:39.297 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-03 21:50:39.362 | ERROR    | app.api.voice:recognize_speech:117 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 21:50:49.846 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-03 21:50:49.848 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-03 21:50:49.849 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-03 21:50:49.849 | INFO     | app.nlp.dialogue_manager:process_message:59 - Intent: request (confidence: 0.519), Entities: 1
+2026-05-03 21:50:56.210 | INFO     | app.nlp.transformer_model:_load_model:48 - Loading model Qwen/Qwen-1_8B-Chat on cpu...
+2026-05-03 21:51:21.767 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 21:51:21.772 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 21:51:21.994 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 21:51:21.994 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 21:52:14.336 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 21:56:28.261 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 21:56:28.266 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 21:56:28.465 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 21:56:28.465 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 21:57:00.461 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-03 21:57:00.524 | ERROR    | app.api.voice:recognize_speech:117 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 21:57:28.154 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 23:04:55.087 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 23:04:55.092 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 23:04:55.287 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 23:04:55.287 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-03 23:05:18.398 | INFO     | app.api.voice:_get_whisper_model:27 - Whisper model loaded successfully
+2026-05-03 23:05:18.434 | ERROR    | app.api.voice:recognize_speech:104 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-03 23:05:36.286 | ERROR    | app.nlp.llm_client:chat_with_image:167 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[12]: unknown variant `image_url`, expected `text` at line 1 column 276807","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-03 23:05:36.287 | ERROR    | app.services.chat_service:_generate_image_response:269 - Image recognition error: Client error '400 Bad Request' for url 'https://api.deepseek.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-03 23:05:36.288 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-03 23:05:36.291 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-03 23:05:36.291 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-03 23:15:01.185 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-03 23:15:16.616 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-03 23:15:16.624 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-03 23:15:16.863 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-03 23:15:16.863 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:23:52.260 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:23:54.160 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:23:54.170 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:23:54.393 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:23:54.393 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:24:01.323 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:24:01.327 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:24:01.532 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:24:01.532 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:24:57.237 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:26:06.046 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:26:06.050 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:26:06.253 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:26:06.253 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:26:58.347 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[14]: unknown variant `image_url`, expected `text` at line 1 column 277109","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 01:26:58.349 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 01:26:58.351 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 01:26:58.351 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 01:27:21.413 | WARNING  | app.api.voice:_get_whisper_model:33 - imageio-ffmpeg not available: No module named 'imageio_ffmpeg'
+2026-05-04 01:27:22.429 | INFO     | app.api.voice:_get_whisper_model:35 - Whisper model loaded successfully
+2026-05-04 01:27:22.469 | ERROR    | app.api.voice:recognize_speech:112 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-04 01:27:25.835 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:28:56.362 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:28:56.366 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:28:56.568 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:28:56.569 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:29:08.996 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[16]: unknown variant `image_url`, expected `text` at line 1 column 277386","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 01:29:08.999 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 01:29:09.001 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 01:29:09.001 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 01:29:57.050 | WARNING  | app.api.voice:_get_whisper_model:33 - imageio-ffmpeg not available: No module named 'imageio_ffmpeg'
+2026-05-04 01:29:57.831 | INFO     | app.api.voice:_get_whisper_model:35 - Whisper model loaded successfully
+2026-05-04 01:29:57.870 | ERROR    | app.api.voice:recognize_speech:112 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-04 01:38:00.287 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:38:01.783 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:38:01.787 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:38:01.983 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:38:01.983 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:38:10.669 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:38:10.674 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:38:10.872 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 01:38:10.872 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:38:31.931 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 478412","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 01:38:31.934 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 01:38:31.935 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 01:38:31.936 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 01:38:41.751 | WARNING  | app.api.voice:_get_whisper_model:63 - imageio-ffmpeg not available: No module named 'imageio_ffmpeg'
+2026-05-04 01:38:42.468 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 01:38:42.509 | ERROR    | app.api.voice:recognize_speech:142 - Speech recognition error: [WinError 2] 系统找不到指定的文件。
+2026-05-04 01:43:08.795 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:43:10.692 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:43:10.697 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:43:10.879 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-pro
+2026-05-04 01:43:10.879 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:45:56.057 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 01:47:57.250 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 01:47:57.254 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 01:47:57.450 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-pro
+2026-05-04 01:47:57.451 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 01:48:14.611 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 473984","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 01:48:14.613 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 01:48:14.615 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 01:48:14.616 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 01:48:25.234 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-04 01:48:25.948 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 02:04:49.659 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 268880","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 02:38:10.336 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 19:11:15.593 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 19:11:15.596 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 19:11:16.207 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-chat
+2026-05-04 19:11:16.207 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 19:11:31.648 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 19:11:31.650 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 19:11:31.650 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 19:12:07.625 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-04 19:12:08.469 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 19:13:14.652 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[8]: unknown variant `image_url`, expected `text` at line 1 column 38815","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 19:26:38.153 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 19:26:39.994 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 19:26:40.000 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 19:26:40.220 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-flash
+2026-05-04 19:26:40.221 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 19:50:38.115 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 19:50:38.118 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 19:50:38.318 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com, model=deepseek-v4-flash, vision_model=deepseek-v4-flash
+2026-05-04 19:50:38.318 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com, model=deepseek-v4-flash
+2026-05-04 19:51:02.593 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 19:51:02.596 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 19:51:02.596 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 20:03:23.154 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 20:03:27.584 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:03:27.588 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:03:27.790 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com, model=deepseek-v4-flash, vision_model=deepseek-v4-flash
+2026-05-04 20:03:27.790 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com, model=deepseek-v4-flash
+2026-05-04 20:03:58.746 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 20:03:58.749 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 20:03:58.750 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 20:05:14.995 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 478144","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 20:13:23.207 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 20:15:00.775 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:15:00.778 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:15:00.975 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-pro
+2026-05-04 20:15:00.975 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 20:15:21.834 | ERROR    | app.nlp.llm_client:chat_with_image:170 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 51162","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 20:15:21.837 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 20:15:21.839 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 20:15:21.839 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 20:23:35.441 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 20:23:36.742 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:23:36.747 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:23:36.945 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-pro
+2026-05-04 20:23:36.945 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 20:23:46.948 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:23:46.952 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:23:47.163 | INFO     | app.nlp.llm_client:__init__:43 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_model=deepseek-v4-pro
+2026-05-04 20:23:47.164 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 20:24:01.605 | INFO     | app.nlp.llm_client:chat_with_image:124 - Vision API request: model=deepseek-v4-pro, base=https://api.deepseek.com/v1
+2026-05-04 20:24:01.782 | ERROR    | app.nlp.llm_client:chat_with_image:177 - LLM Vision API HTTP error: 400 - {"error":{"message":"Failed to deserialize the JSON body into the target type: messages[17]: unknown variant `image_url`, expected `text` at line 1 column 50777","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-04 20:24:01.784 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 20:24:01.786 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 20:24:01.786 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 20:33:45.176 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 20:33:46.609 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:33:46.613 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:33:46.807 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 20:33:46.807 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 20:45:43.830 | INFO     | app.main:lifespan:28 - Starting ChatBot API Server...
+2026-05-04 20:45:43.834 | INFO     | app.main:lifespan:31 - Database initialized
+2026-05-04 20:45:44.034 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 20:45:44.035 | INFO     | app.main:lifespan:36 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 20:46:35.729 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-04 20:46:38.312 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 20:46:38.314 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 20:46:38.314 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 21:18:40.473 | INFO     | app.main:lifespan:57 - Shutting down ChatBot API Server...
+2026-05-04 21:18:41.872 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 21:18:41.876 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 21:18:42.072 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 21:18:42.072 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 21:40:05.187 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 21:40:10.937 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 21:40:10.942 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 21:40:11.160 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 21:40:11.160 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 21:40:31.783 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-04 21:40:32.689 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 21:40:34.857 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 21:40:34.860 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 21:40:34.860 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 21:40:45.691 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-04 21:43:06.667 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 21:43:14.841 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 21:43:14.845 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 21:43:15.049 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 21:43:15.049 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 21:53:13.015 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 21:53:14.407 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 21:53:14.465 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 21:53:14.684 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 21:53:14.684 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 21:58:13.463 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 21:58:14.866 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 21:58:14.874 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 21:58:15.088 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 21:58:15.089 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 23:05:55.273 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 23:36:40.027 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 23:36:40.032 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 23:36:40.231 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 23:36:40.231 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 23:37:03.308 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-04 23:37:04.024 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 23:37:06.899 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 23:37:06.901 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 23:37:06.901 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 23:46:38.122 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 23:46:40.028 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 23:46:40.033 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 23:46:40.222 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 23:46:40.223 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 23:48:08.644 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 23:48:12.620 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 23:48:12.624 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 23:48:12.821 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 23:48:12.821 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 23:48:43.241 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-04 23:48:44.039 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-04 23:48:46.475 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-04 23:48:46.478 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-04 23:48:46.478 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-04 23:48:55.270 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-04 23:49:14.177 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 23:49:18.995 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 23:49:19.000 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 23:49:19.213 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 23:49:19.213 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-04 23:59:16.977 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-04 23:59:18.489 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-04 23:59:18.510 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-04 23:59:18.707 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-04 23:59:18.707 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:00:19.331 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 00:00:23.931 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 00:00:23.937 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 00:00:24.140 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 00:00:24.140 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:00:50.189 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=image, media_url=/uploads/images/img_7a2d451c-c592-46ad-a130-57d6a3383c95_8dbaee28.png, duration=None
+2026-05-05 00:00:50.211 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-05 00:00:52.888 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-05 00:00:52.890 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-05 00:00:52.891 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-05 00:01:03.313 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-05 00:01:04.042 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-05 00:01:05.096 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=voice, media_url=/uploads/audios/audio_7a2d451c-c592-46ad-a130-57d6a3383c95_daa4d8ca.mp3, duration=5
+2026-05-05 00:10:21.905 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 00:10:23.762 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 00:10:23.767 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 00:10:23.960 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 00:10:23.960 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:16:32.433 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 00:16:37.372 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 00:16:37.378 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 00:16:37.586 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 00:16:37.586 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:17:28.349 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=image, media_url=/uploads/images/img_7a2d451c-c592-46ad-a130-57d6a3383c95_e45c9e19.jpg, duration=None
+2026-05-05 00:17:28.372 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-05 00:17:32.473 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-05 00:17:32.475 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-05 00:17:32.475 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-05 00:18:38.918 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 00:29:12.595 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 00:29:12.601 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 00:29:12.802 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 00:29:12.802 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:33:38.032 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 00:45:43.249 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 00:45:43.254 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 00:45:43.452 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 00:45:43.452 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 00:47:14.463 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-05 00:47:15.259 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-05 00:47:16.262 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=voice, media_url=/uploads/audios/audio_7a2d451c-c592-46ad-a130-57d6a3383c95_1a71591c.mp3, duration=2
+2026-05-05 00:47:17.323 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-05 00:47:17.325 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-05 00:47:17.325 | INFO     | app.nlp.dialogue_manager:__init__:44 - DialogueManager initialized
+2026-05-05 01:31:31.418 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 01:33:56.439 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 01:33:56.444 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 01:33:56.645 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 01:33:56.645 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 01:34:11.784 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:11.796 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:11.808 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:11.813 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:11.822 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:13.370 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:14.651 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:14.656 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:14.669 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:14.675 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:14.684 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:15.534 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:23.874 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:23.887 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:23.893 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:23.901 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:23.907 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:34:25.357 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'MessageResponse' is not defined
+2026-05-05 01:35:53.825 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 01:35:53.826 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-05 01:37:02.005 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 01:37:02.010 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 01:37:02.210 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 01:37:02.210 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 01:37:28.015 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 01:37:28.016 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-05 16:10:00.190 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-05 16:10:00.196 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-05 16:10:00.405 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-05 16:10:00.405 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-05 16:11:28.995 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=image, media_url=/uploads/images/img_7a2d451c-c592-46ad-a130-57d6a3383c95_4c42818a.png, duration=None
+2026-05-05 16:11:29.016 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-05 16:11:35.952 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-05 16:11:35.954 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-05 16:11:35.954 | INFO     | app.nlp.dialogue_manager:__init__:45 - DialogueManager initialized
+2026-05-05 16:12:03.918 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-05 16:12:04.797 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-05 16:12:06.213 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=voice, media_url=/uploads/audios/audio_7a2d451c-c592-46ad-a130-57d6a3383c95_fd33e65c.mp3, duration=3
+2026-05-05 16:15:08.757 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-05 16:15:08.762 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-06 15:38:49.316 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-06 15:38:49.322 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-06 15:38:49.521 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-06 15:38:49.521 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-06 15:39:45.995 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-06 15:39:45.999 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-06 15:39:45.999 | INFO     | app.nlp.dialogue_manager:__init__:45 - DialogueManager initialized
+2026-05-06 15:39:52.839 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=text, media_url=None, duration=None
+2026-05-06 17:28:43.998 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-06 17:28:44.002 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-06 17:28:49.363 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-06 17:28:49.368 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-06 17:28:49.570 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-06 17:28:49.570 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-06 17:54:09.254 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-06 17:54:09.257 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-06 17:54:14.921 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-06 17:54:14.926 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-06 17:54:15.126 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-06 17:54:15.126 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-06 18:58:44.645 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-06 18:58:44.647 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:11:25.597 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:11:25.612 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:11:26.232 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:11:26.232 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 00:32:24.241 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'Conversation' is not defined
+2026-05-08 00:32:43.059 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 00:32:43.064 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:32:49.038 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:32:49.044 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:32:49.657 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:32:49.657 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 00:33:01.313 | ERROR    | app.main:global_exception_handler:139 - Unhandled exception: name 'Conversation' is not defined
+2026-05-08 00:37:47.087 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 00:37:47.111 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:37:48.498 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:37:48.504 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:37:49.073 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:37:49.073 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 00:47:27.575 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 00:47:27.585 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:47:44.322 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:47:44.328 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:47:44.958 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:47:44.959 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 00:52:42.445 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 00:52:42.456 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:52:43.768 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:52:43.772 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:52:44.323 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:52:44.323 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 00:57:36.691 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 00:57:36.702 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 00:57:41.437 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 00:57:41.442 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 00:57:42.050 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 00:57:42.050 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 01:15:04.058 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 01:15:04.068 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 17:47:15.917 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 17:47:15.925 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 17:47:16.656 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 17:47:16.657 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 17:47:52.241 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 17:47:52.247 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 17:48:57.191 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 17:48:57.197 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 17:48:57.795 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 17:48:57.795 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 17:50:33.479 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 17:50:33.480 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 18:13:20.255 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 18:13:20.260 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 18:13:20.855 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 18:13:20.855 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 18:14:34.638 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 18:14:34.639 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 18:46:49.090 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 18:46:49.095 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 18:46:49.762 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 18:46:49.763 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 19:53:37.251 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 19:53:37.271 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 19:53:57.491 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 19:53:57.499 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 19:53:58.141 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 19:53:58.142 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 19:54:46.558 | INFO     | app.nlp.intent_recognition:__init__:64 - IntentRecognizer initialized with rule-based patterns
+2026-05-08 19:54:46.561 | INFO     | app.nlp.entity_extraction:__init__:84 - EntityExtractor initialized
+2026-05-08 19:54:46.561 | INFO     | app.nlp.dialogue_manager:__init__:45 - DialogueManager initialized
+2026-05-08 19:54:51.466 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=text, media_url=None, duration=None
+2026-05-08 19:55:41.782 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=image, media_url=/uploads/images/img_7a2d451c-c592-46ad-a130-57d6a3383c95_ad693bad.png, duration=None
+2026-05-08 19:55:41.799 | INFO     | app.nlp.llm_client:chat_with_image:136 - Vision API request: model=qwen-vl-plus, base=https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-05-08 19:56:27.223 | INFO     | app.api.voice:_get_whisper_model:61 - Using ffmpeg from imageio-ffmpeg: D:\Trae\project\backend\.venv\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-08 19:56:28.073 | INFO     | app.api.voice:_get_whisper_model:65 - Whisper model loaded successfully
+2026-05-08 19:56:33.227 | INFO     | app.services.chat_service:process_chat:294 - process_chat: content_type=voice, media_url=/uploads/audios/audio_7a2d451c-c592-46ad-a130-57d6a3383c95_e41c84fc.mp3, duration=4
+2026-05-08 19:57:32.773 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 19:57:32.774 | INFO     | app.main:lifespan:64 - LLM API client closed
+2026-05-08 21:13:47.034 | INFO     | app.main:lifespan:29 - Starting ChatBot API Server...
+2026-05-08 21:13:47.040 | INFO     | app.main:lifespan:32 - Database initialized
+2026-05-08 21:13:47.666 | INFO     | app.nlp.llm_client:__init__:52 - LLMApiClient initialized: base=https://api.deepseek.com/v1, model=deepseek-chat, vision_base=https://dashscope.aliyuncs.com/compatible-mode/v1, vision_model=qwen-vl-plus
+2026-05-08 21:13:47.666 | INFO     | app.main:lifespan:37 - LLM API mode: base=https://api.deepseek.com/v1, model=deepseek-chat
+2026-05-08 22:31:59.874 | INFO     | app.main:lifespan:58 - Shutting down ChatBot API Server...
+2026-05-08 22:31:59.877 | INFO     | app.main:lifespan:64 - LLM API client closed

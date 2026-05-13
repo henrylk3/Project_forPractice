@@ -1,0 +1,66 @@
+<view class="login-container">
+  <view class="login-bg-circle1"></view>
+  <view class="login-bg-circle2"></view>
+  <view class="login-bg-circle3"></view>
+
+  <view class="login-header">
+    <image class="logo" src="/assets/icons/bot-avatar.png" mode="aspectFill"></image>
+    <text class="app-name">Chatbot</text>
+    <text class="app-desc">让我们开始聊天吧</text>
+  </view>
+
+  <view class="login-actions" wx:if="{{!showProfile}}">
+    <button
+      class="btn-wx-login {{canLogin ? '' : 'btn-disabled'}}"
+      bindtap="onWxLogin"
+      loading="{{isLoading}}"
+      disabled="{{!canLogin}}"
+    >
+      <text class="btn-icon">🔐</text>
+      <text class="btn-text">{{isLoading ? '登录中...' : '微信一键登录'}}</text>
+    </button>
+
+    <view class="wx-hint" wx:if="{{loginError}}">
+      <text class="hint-text">⚠️ {{loginError}}</text>
+    </view>
+  </view>
+
+  <view class="profile-setup" wx:if="{{showProfile}}">
+    <view class="profile-card">
+      <text class="profile-title">完善个人信息</text>
+      <text class="profile-desc">设置你的头像和昵称，让大家认识你</text>
+
+      <view class="profile-avatar-section">
+        <button class="avatar-choose-btn" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+          <image class="profile-avatar-preview" src="{{tempAvatarUrl || '/assets/icons/user-avatar.png'}}" mode="aspectFill"></image>
+          <view class="avatar-edit-hint">
+            <text class="edit-hint-text">点击设置头像</text>
+          </view>
+        </button>
+      </view>
+
+      <view class="profile-nickname-section">
+        <input
+          class="profile-nickname-input"
+          type="nickname"
+          placeholder="请输入昵称"
+          value="{{tempNickname}}"
+          bindinput="onNicknameInput"
+          bindblur="onNicknameBlur"
+          maxlength="20"
+        />
+      </view>
+
+      <button class="btn-start-chat" bindtap="onStartChat" loading="{{isSaving}}">
+        <text class="btn-start-text">开始聊天</text>
+      </button>
+    </view>
+  </view>
+
+  <view class="login-footer">
+    <text class="footer-text">登录即表示同意</text>
+    <text class="footer-link">《用户协议》</text>
+    <text class="footer-text">和</text>
+    <text class="footer-link">《隐私政策》</text>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+<view class="stats-page">
+  <view class="section" wx:if="{{!loading}}">
+    <view class="section-title">概览</view>
+    <view class="overview-grid">
+      <view class="overview-card">
+        <text class="overview-value">{{totalConversations}}</text>
+        <text class="overview-label">对话数</text>
+      </view>
+      <view class="overview-card">
+        <text class="overview-value">{{totalMessages}}</text>
+        <text class="overview-label">消息总数</text>
+      </view>
+      <view class="overview-card">
+        <text class="overview-value">{{userMessages}}</text>
+        <text class="overview-label">用户消息</text>
+      </view>
+      <view class="overview-card">
+        <text class="overview-value">{{assistantMessages}}</text>
+        <text class="overview-label">AI回复</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section" wx:if="{{intentLabels.length > 0}}">
+    <view class="section-title">意图识别分布</view>
+    <view class="bar-chart">
+      <view class="bar-item" wx:for="{{intentLabels}}" wx:key="*this">
+        <text class="bar-label">{{item}}</text>
+        <view class="bar-track">
+          <view class="bar-fill" style="width: {{intentValues[index] / intentValues[0] * 100}}%"></view>
+        </view>
+        <text class="bar-value">{{intentValues[index]}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section" wx:if="{{contentTypeLabels.length > 0}}">
+    <view class="section-title">消息类型分布</view>
+    <view class="type-grid">
+      <view class="type-item" wx:for="{{contentTypeLabels}}" wx:key="*this">
+        <view class="type-icon">{{item === 'text' ? '📝' : item === 'voice' ? '🎤' : item === 'image' ? '🖼️' : '📎'}}</view>
+        <text class="type-name">{{item === 'text' ? '文本' : item === 'voice' ? '语音' : item === 'image' ? '图片' : item}}</text>
+        <text class="type-count">{{contentTypeValues[index]}}条</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section" wx:if="{{dailyMessages.length > 0}}">
+    <view class="section-title">近{{dailyMessages.length}}天对话趋势</view>
+    <view class="daily-chart">
+      <view class="daily-item" wx:for="{{dailyMessages}}" wx:key="date">
+        <view class="daily-bar-wrap">
+          <view class="daily-bar" style="height: {{item.count / dailyMaxCount * 100}}%"></view>
+        </view>
+        <text class="daily-date">{{item.date.slice(5)}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="empty" wx:if="{{!loading && totalMessages === 0}}">
+    <text class="empty-text">暂无数据，开始对话后即可查看统计</text>
+  </view>
+
+  <view class="loading" wx:if="{{loading}}">
+    <text>加载中...</text>
+  </view>
+</view>

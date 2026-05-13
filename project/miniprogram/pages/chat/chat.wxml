@@ -1,0 +1,58 @@
+<view class="chat-container">
+  <scroll-view
+    class="message-list"
+    scroll-y
+    enhanced
+    scroll-top="{{scrollTop}}"
+    scroll-with-animation
+    bindscroll="onScroll"
+  >
+    <view class="welcome-section" wx:if="{{messages.length === 0}}">
+      <image class="welcome-icon" src="/assets/icons/bot-avatar.png" mode="aspectFill"></image>
+      <text class="welcome-title">Chatbot</text>
+      <text class="welcome-desc">让我们开始聊天吧</text>
+    </view>
+
+    <view
+      wx:for="{{messages}}"
+      wx:key="id"
+      id="msg-{{item.id}}"
+    >
+      <message-bubble
+        message="{{item}}"
+        userAvatar="{{userAvatar}}"
+      />
+      <view class="voice-player-wrap" wx:if="{{item.role === 'assistant' && item.audioUrl}}">
+        <voice-player
+          audioUrl="{{item.audioUrl}}"
+          autoPlay="{{item.autoPlayAudio}}"
+        />
+      </view>
+    </view>
+
+    <typing-indicator visible="{{isLoading}}" />
+  </scroll-view>
+
+  <view class="scroll-bottom-btn" wx:if="{{showScrollBtn}}" bindtap="onTapScrollBottom">
+    <view class="scroll-bottom-icon">▼</view>
+  </view>
+
+  <view class="new-chat-wrap" wx:if="{{conversationId && messages.length > 0}}">
+    <view class="new-chat-btn" bindtap="startNewChat">
+      <text class="new-chat-btn-icon">✚</text>
+      <text class="new-chat-btn-text">新建聊天</text>
+    </view>
+  </view>
+
+  <view class="input-area">
+    <chat-input
+      id="chatInput"
+      disabled="{{isLoading}}"
+      suggestions="{{suggestions}}"
+      bind:send="onSendMessage"
+      bind:typing="onTyping"
+      bind:voicesend="onVoiceSend"
+      showVoice="{{true}}"
+    />
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="search-container">
+  <view class="search-header">
+    <view class="search-input-wrap">
+      <text class="search-icon">🔍</text>
+      <input
+        class="search-input"
+        placeholder="搜索对话内容"
+        value="{{keyword}}"
+        bindinput="onInput"
+        bindconfirm="onSearch"
+        confirm-type="search"
+        focus="{{true}}"
+      />
+      <text class="clear-btn" wx:if="{{keyword}}" bindtap="clearInput">✕</text>
+    </view>
+    <text class="cancel-btn" bindtap="goBack">取消</text>
+  </view>
+
+  <view class="search-results" wx:if="{{results.length > 0}}">
+    <text class="result-count">找到 {{total}} 条结果</text>
+    <view
+      class="result-item card"
+      wx:for="{{results}}"
+      wx:key="message_id"
+      bindtap="openConversation"
+      data-id="{{item.conversation_id}}"
+    >
+      <text class="result-title">{{item.conversation_title}}</text>
+      <text class="result-content">{{item.highlight}}</text>
+      <text class="result-time">{{item.timeText}}</text>
+    </view>
+  </view>
+
+  <view class="empty-state" wx:elif="{{searched && results.length === 0}}">
+    <text class="empty-icon">🔍</text>
+    <text class="empty-text">未找到相关内容</text>
+    <text class="empty-hint">换个关键词试试</text>
+  </view>
+
+  <view class="search-tips" wx:elif="{{!searched}}">
+    <text class="tips-title">搜索提示</text>
+    <view class="tips-list">
+      <text class="tip-item">• 输入关键词搜索对话内容</text>
+      <text class="tip-item">• 支持搜索历史对话中的消息</text>
+      <text class="tip-item">• 搜索结果会高亮显示匹配内容</text>
+    </view>
+  </view>
+</view>

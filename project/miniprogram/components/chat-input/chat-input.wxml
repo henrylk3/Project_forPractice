@@ -1,0 +1,75 @@
+<view class="chat-input-wrap safe-bottom">
+  <view class="input-row">
+    <view class="toolbar-group">
+      <view class="toolbar-btn" bindtap="toggleEmoji">
+        <text class="toolbar-icon">{{showEmoji ? '⌨️' : '😊'}}</text>
+      </view>
+      <view class="toolbar-btn" bindtap="chooseImage">
+        <text class="toolbar-icon">📷</text>
+      </view>
+      <view class="toolbar-btn {{isRecording ? 'toolbar-btn-recording' : ''}}" bindtap="onVoiceTap">
+        <text class="toolbar-icon">🎤</text>
+      </view>
+    </view>
+    <input
+      class="message-input"
+      placeholder="输入消息..."
+      value="{{inputValue}}"
+      bindinput="onInput"
+      bindconfirm="onSend"
+      confirm-type="send"
+      adjust-position="{{true}}"
+      cursor-spacing="{{20}}"
+      disabled="{{disabled}}"
+    />
+    <view class="send-btn {{hasInput ? 'send-btn-active' : ''}}" bindtap="onSend">
+      <text class="send-text">发送</text>
+    </view>
+  </view>
+
+  <view class="suggestions" wx:if="{{suggestions.length > 0}}">
+    <view
+      class="suggestion-item"
+      wx:for="{{suggestions}}"
+      wx:key="index"
+      bindtap="onSuggestionTap"
+      data-text="{{item}}"
+    >
+      <text class="suggestion-text">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="emoji-panel" wx:if="{{showEmoji}}">
+    <scroll-view scroll-y class="emoji-scroll">
+      <view class="emoji-grid">
+        <view
+          class="emoji-item"
+          wx:for="{{emojiList}}"
+          wx:key="index"
+          bindtap="onEmojiTap"
+          data-emoji="{{item}}"
+        >
+          <text class="emoji-char">{{item}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="recording-overlay" wx:if="{{isRecording}}">
+    <view class="recording-content">
+      <view class="recording-waves">
+        <view class="rec-wave {{i <= volumeLevel ? 'rec-wave-active' : ''}}" wx:for="{{8}}" wx:key="*this" wx:for-index="i" wx:for-item="_"></view>
+      </view>
+      <text class="recording-text">{{recordingStatusText}}</text>
+      <text class="recording-time">{{recordTimeText}}</text>
+      <view class="recording-actions">
+        <view class="recording-btn recording-cancel" bindtap="onVoiceCancel">
+          <text class="recording-btn-text">取消</text>
+        </view>
+        <view class="recording-btn recording-stop" bindtap="onVoiceEnd">
+          <text class="recording-btn-text">发送</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

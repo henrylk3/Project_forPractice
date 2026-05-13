@@ -1,0 +1,101 @@
+.help-container {
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.help-section {
+  margin-bottom: 24rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+  padding: 24rpx 24rpx 12rpx;
+}
+
+.faq-item {
+  margin: 8rpx 24rpx;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  padding: 8rpx 0;
+}
+
+.faq-q-icon {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #4A90D9;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 22rpx;
+  font-weight: 700;
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.faq-q-text {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.faq-arrow {
+  font-size: 32rpx;
+  color: #CCCCCC;
+  transition: transform 0.3s;
+}
+
+.faq-arrow-up {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  padding: 16rpx 0 8rpx 56rpx;
+}
+
+.faq-a-text {
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.guide-item {
+  margin: 8rpx 24rpx;
+}
+
+.guide-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.guide-content {
+  font-size: 26rpx;
+  color: #666666;
+  display: block;
+}
+
+.contact-card {
+  margin: 8rpx 24rpx;
+}
+
+.contact-text {
+  font-size: 26rpx;
+  color: #666666;
+  display: block;
+  margin-bottom: 12rpx;
+}
+
+.contact-email {
+  font-size: 28rpx;
+  color: #4A90D9;
+}

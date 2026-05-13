@@ -1,0 +1,124 @@
+<view class="history-container">
+  <view class="search-bar" bindtap="goSearch">
+    <view class="search-input-wrap">
+      <text class="search-icon">🔍</text>
+      <text class="search-placeholder">搜索对话内容</text>
+    </view>
+  </view>
+
+  <view class="list-header" wx:if="{{conversations.length > 0}}">
+    <text class="list-total">共 {{total}} 个对话</text>
+    <text class="list-clear" bindtap="clearAll">清空全部</text>
+  </view>
+
+  <view class="conversation-list" wx:if="{{conversations.length > 0}}">
+    <view class="section-label" wx:if="{{pinnedConversations.length > 0}}">置顶对话</view>
+    <view
+      class="conversation-item {{item.is_pinned ? 'conv-pinned' : ''}}"
+      wx:for="{{pinnedConversations}}"
+      wx:key="id"
+      bindtap="openConversation"
+      data-id="{{item.id}}"
+    >
+      <view class="conv-content">
+        <view class="conv-header">
+          <text class="conv-title">{{item.title}}</text>
+          <text class="conv-time">{{item.timeText}}</text>
+        </view>
+        <view class="conv-footer">
+          <text class="conv-preview">{{item.lastMessage || ''}}</text>
+          <view class="conv-meta">
+            <text class="conv-count">{{item.message_count}}条</text>
+            <text class="pin-badge">📌 置顶</text>
+          </view>
+        </view>
+      </view>
+      <view class="conv-actions">
+        <view class="action-btn action-unpin" catchtap="togglePin" data-id="{{item.id}}" data-index="{{index}}" data-pinned="true">
+          <text class="action-text">取消置顶</text>
+        </view>
+        <view class="action-btn action-rename" catchtap="showRename" data-id="{{item.id}}" data-title="{{item.title}}" data-index="{{index}}">
+          <text class="action-text">重命名</text>
+        </view>
+        <view class="action-btn action-export" catchtap="exportConversation" data-id="{{item.id}}" data-index="{{index}}">
+          <text class="action-text">导出</text>
+        </view>
+        <view class="action-btn action-delete" catchtap="deleteConversation" data-id="{{item.id}}" data-index="{{index}}">
+          <text class="action-text">删除</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section-label" wx:if="{{pinnedConversations.length > 0 && normalConversations.length > 0}}">最近对话</view>
+    <view
+      class="conversation-item"
+      wx:for="{{normalConversations}}"
+      wx:key="id"
+      bindtap="openConversation"
+      data-id="{{item.id}}"
+    >
+      <view class="conv-content">
+        <view class="conv-header">
+          <text class="conv-title">{{item.title}}</text>
+          <text class="conv-time">{{item.timeText}}</text>
+        </view>
+        <view class="conv-footer">
+          <text class="conv-preview">{{item.lastMessage || ''}}</text>
+          <view class="conv-meta">
+            <text class="conv-count">{{item.message_count}}条</text>
+          </view>
+        </view>
+      </view>
+      <view class="conv-actions">
+        <view class="action-btn action-pin" catchtap="togglePin" data-id="{{item.id}}" data-index="{{index}}" data-pinned="false">
+          <text class="action-text">置顶</text>
+        </view>
+        <view class="action-btn action-rename" catchtap="showRename" data-id="{{item.id}}" data-title="{{item.title}}" data-index="{{index}}">
+          <text class="action-text">重命名</text>
+        </view>
+        <view class="action-btn action-export" catchtap="exportConversation" data-id="{{item.id}}" data-index="{{index}}">
+          <text class="action-text">导出</text>
+        </view>
+        <view class="action-btn action-delete" catchtap="deleteConversation" data-id="{{item.id}}" data-index="{{index}}">
+          <text class="action-text">删除</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="load-more" wx:if="{{hasMore}}">
+      <text class="load-more-text" bindtap="loadMore">加载更多</text>
+    </view>
+  </view>
+
+  <view class="empty-state" wx:elif="{{loaded && conversations.length === 0}}">
+    <text class="empty-icon">💬</text>
+    <text class="empty-text">暂无对话记录</text>
+    <text class="empty-hint">开始新的对话吧</text>
+    <view class="empty-btn" bindtap="goChat">
+      <text class="empty-btn-text">开始对话</text>
+    </view>
+  </view>
+
+  <view class="loading-state" wx:elif="{{!loaded}}">
+    <text class="loading-text">加载中...</text>
+  </view>
+</view>
+
+<view class="rename-mask" wx:if="{{showRenamePanel}}" bindtap="hideRename"></view>
+<view class="rename-panel {{showRenamePanel ? 'rename-show' : ''}}">
+  <view class="rename-header">
+    <text class="rename-cancel" bindtap="hideRename">取消</text>
+    <text class="rename-title">重命名对话</text>
+    <text class="rename-confirm" bindtap="confirmRename">确定</text>
+  </view>
+  <view class="rename-body">
+    <input
+      class="rename-input"
+      placeholder="输入新的对话标题"
+      value="{{renameValue}}"
+      bindinput="onRenameInput"
+      maxlength="30"
+      focus="{{showRenamePanel}}"
+    />
+  </view>
+</view>

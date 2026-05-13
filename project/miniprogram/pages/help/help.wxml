@@ -1,0 +1,41 @@
+<view class="help-container">
+  <view class="help-section">
+    <text class="section-title">常见问题</text>
+    <view class="faq-list">
+      <view
+        class="faq-item card"
+        wx:for="{{faqItems}}"
+        wx:key="id"
+        bindtap="toggleFaq"
+        data-index="{{index}}"
+      >
+        <view class="faq-question">
+          <text class="faq-q-icon">Q</text>
+          <text class="faq-q-text">{{item.question}}</text>
+          <text class="faq-arrow {{item.expanded ? 'faq-arrow-up' : ''}}">›</text>
+        </view>
+        <view class="faq-answer" wx:if="{{item.expanded}}">
+          <text class="faq-a-text">{{item.answer}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="help-section">
+    <text class="section-title">使用指南</text>
+    <view class="guide-list">
+      <view class="guide-item card" wx:for="{{helpItems}}" wx:key="title">
+        <text class="guide-title">{{item.title}}</text>
+        <text class="guide-content">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="help-section">
+    <text class="section-title">联系我们</text>
+    <view class="card contact-card">
+      <text class="contact-text">如有问题或建议，请通过以下方式联系我们：</text>
+      <text class="contact-email">📧 support@example.com</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Chatbot",
+  "usingComponents": {
+    "message-bubble": "/components/message-bubble/message-bubble",
+    "chat-input": "/components/chat-input/chat-input",
+    "typing-indicator": "/components/typing-indicator/typing-indicator",
+    "voice-player": "/components/voice-player/voice-player"
+  }
+}

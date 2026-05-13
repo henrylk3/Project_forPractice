@@ -1,0 +1,68 @@
+.voice-player {
+  padding: 12rpx 0;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.play-btn {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  background-color: #4A90D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.play-btn-active {
+  background-color: #E67E22;
+}
+
+.play-icon {
+  font-size: 28rpx;
+}
+
+.player-progress {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.progress-bar {
+  height: 8rpx;
+  background-color: #E0E0E0;
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4A90D9;
+  border-radius: 4rpx;
+  transition: width 0.3s linear;
+}
+
+.progress-time {
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.stop-btn {
+  width: 48rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stop-icon {
+  font-size: 24rpx;
+}
